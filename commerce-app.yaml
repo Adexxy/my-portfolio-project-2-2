@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: commerce-app
-        image: docker pull adexxy/commerce-app:0.1.0-18
+        image: adexxy/commerce-app:0.1.0-18
         resources:
           requests:
             memory: 
