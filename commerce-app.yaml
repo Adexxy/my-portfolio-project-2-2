@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: commerce-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: commerce-app
+  template:
+    metadata:
+      labels:
+        app: commerce-app
+    spec:
+      containers:
+      - name: commerce-app
+        image: docker pull adexxy/commerce-app:0.1.0-18
+        resources:
+          requests:
+            memory: 
+            cpu: 
+          limits:
+            memory: 
+            cpu: 
+        ports:
+        - containerPort: 3000
