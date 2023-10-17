@@ -29,5 +29,6 @@ spec:
   selector:
     app: commerce-app
   ports:
-  - port: 83
+  - port: 80
     targetPort: 3000
+    nodePort: 30004
